@@ -1,0 +1,1113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus',serif;
+}
+*{
+    text-decoration: none;
+}
+.container{
+    padding: 0 4rem;
+}
+header{
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+}
+header .all-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav-left{
+    width: 10%;
+}
+header .nav-left img{
+    width: 100%;
+    cursor: pointer;
+}
+header .nav-center{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+header .nav-center a{
+    padding: 0 23px;
+    color: #fff;
+    position: relative;
+}
+header .right i{
+    padding-left: 32px;
+    transition: .4s;
+}
+header .right i:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+header a.left::after{
+    content: " ";
+    position: absolute;
+    bottom: -4px;
+    left: 23px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+header a:hover::after{
+    width: 50%;
+}
+#phone-navbar {
+    display: none;
+}
+#phone-navbar  .all{
+    padding: 20px 2rem;
+}
+#phone-navbar .ph-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#phone-navbar .right-nav img{
+    width: 45%;
+}
+@media (max-width:576px) {
+    header{
+        display: none;
+    }
+    .container{
+       padding:  0 2rem;
+    }
+    #phone-navbar{
+        display: block;
+    }
+}
+#first{
+    padding-top: 10rem;
+    height: 100vh;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+#first .left{
+    width: 40%;
+}
+#first .all-first{
+    margin-top: 60px;
+    width: 60%;
+}
+#first .all-first .first-img{
+    width: 15%;
+}
+#first .all-first .second-img{
+    width: 15%;
+}
+#first .all-first .h1{
+    font-size: 68px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+#first .all-first .p{
+    font-size: 16px;
+    color: #fff;
+    margin: 20px 0 50px 0;
+}
+#first .all-first a{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 16px;
+    font-size: 14px;
+    padding: 20px 60px;
+    transition: .4s;
+}
+#first .all-first a:hover{
+    background-color: rgb(190, 156, 121);
+    border:2px solid  rgb(190, 156, 121);
+}
+#phone-first{
+    display: none;
+}
+#phone-first .all-phone{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg);
+    background-size: cover;
+    padding: 10rem 0;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+#phone-first .all-first-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#phone-first .all-first-phone .first-img-phone{
+    width: 40%;
+}
+#phone-first .all-first-phone .second-img-phone{
+    width: 40%;
+    margin-bottom: 20px;
+}
+#phone-first .h1-phone{
+    font-size: 30px;
+    color: #fff;
+    margin: 20px 0 ;
+}
+#phone-first a{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+}
+@media(max-width:576px){
+    #first{
+        display: none;
+    }
+    #phone-first{
+        display: block;
+    }
+}
+#second{
+    padding: 8rem 0;
+}
+#second .second-top{
+    text-align: center;
+}
+#second .second-top h2{
+    font-size: 45px;
+    color: #262626;
+    font-weight: 200;
+}
+#second .second-top img{
+    margin: 20px 0;
+}
+#second .second-top h6{
+    color: #262626;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    line-height: 28px;
+}
+#second .second-bottom h5{
+    font-size: 20px;
+    color: #262626;
+    font-weight: 100;
+    margin: 15px 0;
+    transition: .4s;
+}
+#second .second-bottom h5:hover{
+    color: #BE9C79;
+    cursor: pointer;
+}
+#second .second-bottom img{
+    cursor: pointer;
+}
+#second .second-bottom p{
+    color: #656565;
+    font-size: 15px;
+    line-height: 26px;
+}
+#second .all-second-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#second .all-second-bottom .second-bottom{
+    width: 20%;
+    text-align: center;
+}
+#second-phone{
+    display: none;
+}
+#second-phone .second-top h2{
+    font-size: 35px;
+    color: #262626;
+    line-height: 43px;
+    font-weight: 200;
+}
+#second-phone .second-top h6{
+    font-size: 18px;
+    color: #262626;
+    line-height: 28px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#second-phone img{
+    margin: 25px;
+}
+#second-phone .all-second{
+    padding: 8rem 4rem;
+}
+#second-phone .second-top{
+    text-align: center;
+}
+#second-phone .second-top p{
+    font-weight: 100;
+    line-height: 28px;
+}
+#second-phone .all-second-bottom{
+    width: 100%;
+    text-align: center;
+}
+#second-phone .all-second-bottom p{
+    line-height: 26px;
+    font-size: 15px;
+}
+#second-phone .all-second-bottom h5{
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 5px;
+}
+#second-phone .all-second-bottom .second-bottom{
+    margin-bottom: 50px;
+}
+@media(max-width:576px){
+    #second{
+        display: none;
+    }
+    #second-phone{
+        display: block;
+    }
+}
+#third{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    background-position: center;
+    padding: 7rem 0;
+}
+#third .top-third{
+    text-align: center;
+}
+#third .top-third h2{
+    font-size: 45px;
+    color: #262626;
+    font-weight: 200;
+}
+#third .top-third img{
+    margin: 20px 0;
+}
+#third .top-third h6{
+    font-size: 18px;
+    color: #262626;
+    font-weight: 100;
+    margin-bottom: 60px;
+    line-height: 28px;
+}
+#third .all-bottom-third{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#third .bottom-third{
+    width: 31%;
+}
+#third .bottom-third img{
+    width: 100%;
+    cursor: pointer;
+}
+#third .bottom-third h5{
+    font-size:20px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+#third .bottom-third h5 a{
+    color: #262626;
+    transition: .4s;
+}
+#third .bottom-third h5 a:hover{
+    color: #BE9C79;
+}
+#third .bottom-third p{
+    font-size: 15px;
+    color: #656565;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+#third .bottom-third .read a{
+    font-size: 12px;
+    color: #262626;
+    font-weight: bold;
+    transition: .4s;
+}
+#third .bottom-third .read a:hover{
+    color: #BE9C79;
+}
+#third .bottom-third .read span{
+    margin-left: 8px;
+}
+#third-phone{
+    display: none;
+}
+#third-phone .all-third{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    background-position: center;
+    padding: 7rem 3rem;
+}
+#third-phone .top-third{
+    text-align: center;
+}
+#third-phone .top-third h2{
+    font-size: 35px;
+    color: #262626;
+    font-weight: 200;
+}
+#third-phone .top-third h6{
+    font-size: 18px;
+    color: #262626;
+    font-weight: 100;
+    margin-bottom: 60px;
+    line-height: 28px;
+}
+#third-phone .top-third img{
+    margin: 20px 0;
+}
+#third-phone .all-bottom-third{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#third-phone .bottom-third{
+    margin-bottom: 50px;
+}
+#third-phone .bottom-third img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#third-phone .bottom-third h5{
+    font-size:18px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+#third-phone .bottom-third h5 a{
+    color: #262626;
+}
+#third-phone .bottom-third p{
+    font-size: 15px;
+    color: #656565;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+#third-phone .bottom-third .read a{
+    font-size: 12px;
+    color: #262626;
+    font-weight: bold;
+}
+#third-phone .bottom-third .read span{
+    margin-left: 8px;
+}
+@media(max-width:576px){
+    #third{
+        display: none;
+    }
+    #third-phone{
+        display: block;
+    }
+}
+#fourth{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    background-attachment: fixed;
+}
+#fourth .img{
+    text-align: center;
+    padding: 8rem 0;
+    margin-top: 10rem;
+}
+#fourth img{
+    width: 15%;
+}
+#fourth-phone{
+    display: none; 
+}
+#fourth-phone{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fourth-phone .img{
+    text-align: center;
+    padding: 8rem 0;
+}
+#fourth-phone img{
+    width: 60%;
+}
+    
+@media(max-width:576px){
+    #fourth{
+        display: none;
+    }
+    #fourth-phone{
+        display: block;
+    }
+}
+#fifth{
+    padding: 7rem 0;
+}
+#fifth .all-fifth{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#fifth .all-fifth span{
+    font-size: 55px;
+    color: #be9c79;
+}
+#fifth .all-fifth h5{
+    font-size: 20px;
+    color: #262626;
+    font-weight: 400;
+    margin: 15px 0 5px 0;
+    line-height: 30px;
+}
+#fifth .all-fifth p{
+    font-size: 15px;
+    color: #656565;
+    line-height: 26px;
+}
+#fifth-phone{
+    display: none;
+}
+#fifth-phone .all-fifth{
+    padding: 5rem 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#fifth-phone .box{
+    margin-bottom: 5rem;
+}
+#fifth-phone .all-fifth span{
+    font-size: 55px;
+    color: #be9c79;
+}
+#fifth-phone .all-fifth h5{
+    font-size: 18px;
+    color: #262626;
+    font-weight: 400;
+    margin: 15px 0 5px 0;
+    line-height: 30px;
+}
+#fifth-phone .all-fifth p{
+    font-size: 15px;
+    color: #656565;
+    line-height: 26px;
+}
+@media(max-width:576px){
+    #fifth{
+        display: none;
+    }
+    #fifth-phone{
+        display: block;
+    }
+}
+#sixth{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    background-position: center;
+    padding: 8rem 0;
+}
+#sixth .sixth-top{
+    text-align: center;
+}
+#sixth .sixth-top h2{
+    font-size: 45px;
+    color: #262626;
+    font-weight: 400;
+    line-height: 55px;
+}
+#sixth .sixth-top img{
+    margin: 20px 0;
+}
+/* #sixth .absolute a{
+    position: absolute;
+    background-color: #897058;
+    padding: 10px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+} */
+#sixth .sixth-top h6{
+    font-size: 18px;
+    color: #262626;
+    font-weight: 100;
+    line-height: 28px;
+}
+#sixth .imgbottom{
+    position: relative;
+}
+#sixth .all-sixth-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+#sixth .absolute a{
+    position: absolute;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #AD8257;
+    left: 15%;
+    top: 45%;
+    translate: (-50% , -50%);
+    width: 70%;
+    transition: .3s;
+    opacity: 0;
+}
+#sixth .imgbottom:hover .absolute a{
+    background-color:#AD8257;
+    opacity: 1;
+    z-index: 1;
+}
+#sixth .imgbottom .absolute a:hover{
+    background-color: #121212;
+}
+#sixth .all-sixth-bottom .sixth-bottom{
+    width: 20%;
+}
+#sixth .all-sixth-bottom .sixth-bottom a img{
+    width: 100%;
+    transition: .3s;
+}
+#sixth .all-sixth-bottom .sixth-bottom a img:hover{
+    opacity: .5;
+}
+#sixth  .sixth-bottom-bottom{
+    display: flex;
+    flex-direction: column;
+}
+#sixth  .sixth-bottom-bottom a{
+    font-size: 20px;
+    color: #262626;
+    line-height: 30px;
+    margin: 1.5rem 0 0.3rem 0;
+    transition: .4s;
+}
+#sixth  .sixth-bottom-bottom a:hover{
+    color: #BE9C79;
+}
+#sixth  .sixth-bottom-bottom span{
+    font-size: 18px;
+    color: #777;
+}
+#sixth-phone{
+    display: none;
+}
+#sixth-phone .all-sixth-phone{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    background-position: center;
+    padding: 5rem 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#sixth-phone .sixth-top h2{
+    font-size: 35px;
+    color: #262626;
+    font-weight: 400;
+    line-height: 43px;
+}
+#sixth-phone .sixth-top img{
+    margin: 20px 0;
+}
+#sixth-phone .sixth-top h6{
+    font-size: 18px;
+    color: #262626;
+    font-weight: 100;
+    line-height: 28px;
+}
+#sixth-phone .all-sixth-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+}
+#sixth-phone .sixth-bottom{
+    margin-bottom:3rem ;
+}
+#sixth-phone .all-sixth-bottom .sixth-bottom{
+    width: 100%;
+}
+#sixth-phone .all-sixth-bottom .sixth-bottom a img{
+    width: 100%;
+}
+#sixth-phone .sixth-bottom-bottom {
+    display: flex;
+    flex-direction: column;
+}
+#sixth-phone .sixth-bottom-bottom a{
+    font-size: 18px;
+    color: #262626;
+    line-height: 30px;
+    margin: 1.5rem 0 0.3rem 0;
+}
+#sixth-phone .sixth-bottom-bottom span{
+    font-size: 18px;
+    color: #777;
+}
+@media(max-width:576px){
+    #sixth{
+        display: none;
+    }
+    #sixth-phone{
+        display: block;
+    }
+}
+#seventh{
+    width: 100%;
+    padding: 7rem 0 0 0;
+}
+#seventh .seventh-top{
+    text-align: center;
+}
+#seventh .seventh-top img{
+    margin: 15px 0;
+}
+#seventh .seventh-top h2{
+    font-size: 45px;
+    color: #262626;
+    line-height: 55px;
+    font-weight: 300;
+}
+#seventh .seventh-top h6{
+    font-size: 18px;
+    color: #262626;
+    line-height: 28px;
+    font-weight: 300;
+}
+#seventh .all-seventh-bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+#seventh .all-seventh-bottom .seventh-bottom{
+    width: 24%;
+    margin-bottom: 15px;
+}
+#seventh .abs{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    transition: .3s;
+    background-color: #00000096;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 98.5%;
+    opacity: 0;
+}
+#seventh .abs h3{
+    font-size: 30px;
+    font-weight: 300;
+}
+#seventh .abs a{
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+#seventh .abs a:hover{
+    color: #AD8257;
+}
+#seventh .seventh-bottom{
+    position: relative;
+}
+#seventh .seventh-bottom:hover .abs{
+    opacity: 1;
+}
+#seventh .all-seventh-bottom .seventh-bottom a img{
+    width: 100%;
+}
+#seventh-phone{
+    display: none;
+}
+#seventh-phone .all-seventh-phone{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+}
+#seventh-phone .seventh-top{
+    padding: 5rem 3.5rem;
+}
+#seventh-phone .seventh-top h2{
+    font-size: 35px;
+    color: #262626;
+    line-height: 43px;
+    font-weight: 400;
+}
+#seventh-phone .seventh-top img{
+    margin: 20px;
+}
+#seventh-phone .seventh-top h6{
+    font-size: 18px;
+    color: #262626;
+    line-height: 28px;
+    font-weight: 300;
+}
+#seventh-phone .all-seventh-bottom .seventh-bottom{
+    width: 100%;
+    margin-top: 1rem;
+}
+#seventh-phone .all-seventh-bottom .seventh-bottom a img{
+    width: 100%;
+}
+@media(max-width:576px){
+    #seventh{
+        display: none;
+    }
+    #seventh-phone{
+        display: block;
+    }
+}
+#eight{
+    padding: 80px 0;
+}
+#eight .img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#eight .img1{
+    width: 100%;
+}
+#eight .img img{
+    width: 100%;
+    transition: .4s;
+}
+#eight .img img:hover{
+    color: #BE9C79;
+    opacity: .5;
+    cursor: pointer;
+}
+#eight-phone{
+    display: none;
+}
+#eight-phone .img1{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:576px){
+    #eight{
+        display: none;
+    }
+    #eight-phone{
+        display: block;
+    }
+}
+#nineth{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg);
+    padding: 4rem 0;
+}
+#nineth .all-nineth{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#nineth .left{
+    width: 65%;
+}
+#nineth .right{
+    width: 20%;
+    text-align: left;
+}
+
+#nineth .all-nineth h5{
+    font-size: 20px;
+    color: #262626;
+    font-weight: 400;
+    line-height: 30px;
+}
+#nineth .all-nineth a{
+    font-size: 12px;
+    color: #fff;
+    background-color: #be9c79;
+    padding: 19px 40px;
+    line-height: 14px;
+    transition: .4s;
+}
+#nineth .all-nineth a:hover{
+    background-color: #262626;
+}
+
+#nineth-phone{
+    display: none;
+}
+#nineth-phone .all-nineth{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg);
+    padding: 6rem 60px;
+    display: flex;
+    flex-direction: column;
+}
+#nineth-phone h5{
+    font-size: 18px;
+    color: #262626;
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+#nineth-phone a{
+    font-size: 12px;
+    color: #fff;
+    background-color: #be9c79;
+    padding: 19px 40px;
+    line-height: 14px;
+}
+@media(max-width:576px){
+    #nineth{
+        display: none;
+    }
+    #nineth-phone{
+        display: block;
+    }
+}
+#ten{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/footer-top-img-1.jpg);
+    background-position: center;
+    text-align: center;
+    padding: 5rem 0;
+}
+#ten .top-ten p{
+    font-size: 15px;
+    color: #fff;
+    line-height: 26px;
+    font-weight: 300;
+    margin-top: 1.2rem;
+}
+#ten .center-ten h5{
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+#ten .center-ten p a{
+    font-size: 15px;
+    color: #fff;
+    line-height: 26px;
+    font-weight: 300;
+    transition: .4s;
+}
+#ten .center-ten p a:hover{
+    color: #897058;
+}
+#ten .bottom-ten h5{
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+#ten .bottom-ten input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 20px 100px;
+    margin-top: 1rem;
+}
+#ten .bottom-ten form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 23px;
+}
+#ten .bottom-ten form i{
+    font-size: 25px;
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 0 19px;
+    line-height: 58.5px;
+    margin-left: -6px;
+    transition: .4s;
+}
+#ten .bottom-ten form i:hover{
+    background-color: #BE9C77;
+}
+#ten-phone{
+    display: none;
+}
+#ten-phone .all-ten-phone{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/footer-top-img-1.jpg);
+    background-position: center;
+    text-align: center;
+    padding: 5rem 50px;
+}
+#ten-phone .top-ten p{
+    font-size: 15px;
+    color: #fff;
+    line-height: 26px;
+    font-weight: 300;
+    margin-top: 1.2rem;
+}
+#ten-phone .center-ten h5{
+    font-size: 18px;
+    color: #fff;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+#ten-phone .center-ten p a{
+    font-size: 15px;
+    color: #fff;
+    line-height: 26px;
+    font-weight: 300;
+}
+#ten-phone .bottom-ten h5{
+    font-size: 18px;
+    color: #fff;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+#ten-phone .bottom-ten input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 20px 50px;
+    margin-top: 1rem;
+}
+#ten-phone .bottom-ten form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ten-phone .bottom-ten i{
+    font-size: 25px;
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 0 19px;
+    line-height: 58.5px;
+    margin-left: -6px;
+}
+@media(max-width:576px){
+    #ten{
+        display: none;
+    }
+    #ten-phone{
+        display: block;
+    }
+}
+footer{
+    background-color: #121212;
+    padding: 3rem 0;
+}
+footer .all-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+footer .all-footer p{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 100;
+}
+footer .all-footer a{
+    color: #fff;
+    line-height: 26px;
+    transition: .4s;
+}
+footer .all-footer a:hover{
+    color: #897058;
+}
+footer .all-footer .left-footer{
+    width: 25%;
+}
+footer .all-footer .center-footer{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .all-footer .right-footer{
+    width: 25%;
+    text-align: right;
+}
+footer .all-footer .right-footer i{
+    margin-left: 1.5rem;
+    line-height: 26px;
+    transition: .4s;
+}
+footer .all-footer .right-footer i:hover{
+    color: #897058;
+    cursor: pointer;
+}
+#footer-phone{
+    display: none;
+}
+#footer-phone .all-footer{
+    background-color: #121212;
+    padding: 3rem 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+#footer-phone .all-footer p{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+#footer-phone .all-footer a{
+    color: #fff;
+    line-height: 26px;
+}
+#footer-phone .all-footer .a{
+    color: #fff;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+#footer-phone .center-footer{
+    margin-bottom: 30px;
+}
+#footer-phone .right-footer i{
+   margin: 0 10px;
+}
+@media(max-width:576px){
+    footer{
+        display: none;
+    }
+    #footer-phone{
+        display: block;
+    }
+}
+.fixed i{
+    color: #fff;
+    background-color: rgba(220, 20, 60, 0.774);
+    bottom: 270px;
+    padding: 10px;
+    font-size: 23px;
+    right: 0;
+    position: fixed;
+    cursor: pointer;
+}
+.fixed1 i{
+    color: rgba(220, 20, 60, 0.774);
+    background-color: #fff;
+    bottom: 221px;
+    padding: 9px;
+    font-size: 23px;
+    right: 0;
+    position: fixed;
+    cursor: pointer;
+}
